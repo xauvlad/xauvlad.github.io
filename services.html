@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <title>Маэстро груза: Услуги</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+        </a>
+        <a href="index.html">
+            <div class="logo">
+                <h1>Маэстро груза</h1>
+            </div>
+        </a>
+        <nav class="main-nav" style="margin-left: auto;">
+            <ul>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="maps.html">Карты</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="box">
+            <div class="head-text">
+                <h1>Калькулятор</h1>
+                <br>
+                <a>С помощью этого калькулятора вы можете рассчитать цену для перевозок, подходящих под ваши требования.</a>
+            </div>
+            <div class="calculator-section" data-aos="fade-right" style="justify-self: center;">
+                <form id="calculator">
+                    <label for="services">Выберите вид услуги:</label>
+                    <div class="custom-select">
+                        <select id="services" name="services">
+
+
+                        </select>
+                    </div>
+                    <br>
+                    <label for="weight">Вес груза (кг):</label>
+                    <input type="number" id="weight" name="weight" required><br><br>
+                
+                    <label for="distance">Расстояние (км):</label>
+                    <input type="number" id="distance" name="distance" required><br><br>
+                
+                    <label for="rate">Тариф (руб/кг*км):</label>
+                    <input type="number" id="rate" name="rate" value="5" required><br><br>
+                
+                    <button type="button" onclick = calculate()>Рассчитать</button><br><br>
+                
+                    <label for="total">Итоговая стоимость:</label>
+                    <input type="text" id="total" name="total" readonly>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div style="padding-left: 10px;">
+            <p>© 2023-2023 Маэстро Груза<sup>TM</sup> - интернет-площадка. <br>Все права защищены. Копирование материалов с сайта без ссылки на этот ресурс запрещено. <br>г. Москва, Электродная ул., 4-б, 111524</p>
+        </div>
+        <div style="margin-left: auto; padding-right: 10px; text-align: right;">
+            Пользовательское соглашение<br>Политика обработки персональных данных
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="selector.js"></script>
+</body>
+</html>
