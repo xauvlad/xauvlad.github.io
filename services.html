@@ -41,7 +41,7 @@
                 <form id="calculator">
                     <label for="services">Выберите вид услуги:</label>
                     <div class="custom-select">
-                        <select id="services" name="services">
+                        <select id="services" name="services" onchange = changeRate()>
 
 
                         </select>
@@ -54,7 +54,7 @@
                     <input type="number" id="distance" name="distance" required><br><br>
                 
                     <label for="rate">Тариф (руб/кг*км):</label>
-                    <input type="number" id="rate" name="rate" value="5" required><br><br>
+                    <input type="number" id="rate" name="rate" value="5" required readonly><br><br>
                 
                     <button type="button" onclick = calculate()>Рассчитать</button><br><br>
                 
@@ -62,6 +62,19 @@
                     <input type="text" id="total" name="total" readonly>
                 </form>
             </div>
+        </div>
+        <div class="box">
+            <!--1 section-->
+            <section class="image-text-section" data-aos="fade-right">
+                <div class="image">
+                    <img src="img/location.png" alt="Описание изображения">
+                </div>
+                <div class="text">
+                    <h2 class="img_txt_header">Что делать с этой информацией?</h2>
+                    <p class="img-text">Данная цена является не точной, так как на стоимость заказа влияет множество факторов, которые уточняются в процессе. Вы можете позвонить или написать нам по номеру телефона.</p>
+                </div>
+            </section>
+
         </div>
     </div>
     <footer class="site-footer">
@@ -76,5 +89,6 @@
         AOS.init();
     </script>
     <script src="selector.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>

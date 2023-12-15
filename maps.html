@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Маэстро груза: Карты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -27,8 +29,24 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <a>О нас</a>
+    <div class="content">
+        <div class="box">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1364862945325!2d37.75079174031208!3d55.75613120875831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acaadcaf919cb%3A0x671652a6bfea955c!2z0LTQvtC8LCA00LEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTE1MjQ!5e0!3m2!1sru!2sca!4v1702605163495!5m2!1sru!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
+    <!--Footer-->
+    <footer class="site-footer">
+        <div style="padding-left: 10px;">
+            <p>© 2023-2023 Маэстро Груза<sup>TM</sup> - интернет-площадка. <br>Все права защищены. Копирование материалов с сайта без ссылки на этот ресурс запрещено. <br>г. Москва, Электродная ул., 4-б, 111524</p>
+        </div>
+        <div style="margin-left: auto; padding-right: 10px; text-align: right;">
+            Пользовательское соглашение<br>Политика обработки персональных данных
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

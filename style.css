@@ -55,6 +55,11 @@
     justify-self: auto;
 }
 
+.content .map-container {
+    align-self: center;
+    justify-self: center;
+}
+
 .img-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -119,7 +124,9 @@ header {
 }
 
 .box {
+    margin-top: 10px;
     row-gap: 20px;
+    column-gap: 20px;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
@@ -171,6 +178,11 @@ header {
     height: auto;
 }
 
+.head-text a {
+    display: inline-block;
+    text-align: center;
+}
+
 .text {
     flex: 1;
     padding-right: 4%;
@@ -197,8 +209,16 @@ header {
     color: #b0b0b0;
 }
 
-
-
+.map-container {
+    display: flex;
+    flex: 1;
+    height: 650px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    justify-self: center;
+}
 
 
 
@@ -215,11 +235,21 @@ header {
     .main-nav ul li a {
         font-size: 0.8rem;
     }
-
+    .map-container {
+        display: flex;
+        flex: 1;
+        height: 400px;
+        width: 400px;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        justify-self: center;
+    }
     .site-header a {
         color: #1B1B1B; 
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .box {
@@ -234,13 +264,13 @@ header {
 
 @media (max-width:480px) {
     .main-nav ul li a {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .site-header a {
         color: #1B1B1B; 
         text-decoration: none;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     .calculator-section label {
         font-family: 'SoyuzGrotesk';

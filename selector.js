@@ -7,7 +7,7 @@ const generateSelect = ()=> {
             data["services"].forEach(option => {
                 const optionElement = document.createElement('option');
                 optionElement.value = ind.toString();
-                optionElement.textContent = option;
+                optionElement.textContent = option[0];
                 select.appendChild(optionElement);
                 ind+=1;
             });
